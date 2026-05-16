@@ -17,8 +17,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        // Using andreasjk/fitscore which has Swift 6 compatibility fixes
-        .package(name: "FITSCore", url: "https://github.com/andreasjk/fitscore.git", .exact("0.3.1"))
+        // 0.3.2 fixes Swift 6/Xcode 26 optional comparison ambiguities.
+        .package(name: "FITSCore", url: "https://github.com/andreasjk/fitscore.git", .exact("0.3.2"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
